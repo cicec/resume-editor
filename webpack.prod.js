@@ -30,6 +30,9 @@ module.exports = {
                     ]
                 }
             }
+        }, {
+            test: /\.(png|jpg|gif)$/,
+            loader: 'url-loader?limit=8192&name=./static/img/[hash].[ext]',
         }]
     },
     plugins: [
