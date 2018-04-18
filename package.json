@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "leancloud-storage": "^3.6.3"
+    "leancloud-storage": "^3.6.3",
+    "vue": "^2.5.16"
   }
 }
