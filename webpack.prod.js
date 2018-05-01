@@ -43,4 +43,9 @@ module.exports = {
             chunks: ['index'],
         })
     ],
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
+    }
 }

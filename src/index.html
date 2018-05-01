@@ -56,10 +56,14 @@
         <section class="content">
             <div class="resume">
                 <div class="resume-inner">
-                    <div class="paper">
+                    <div id="paper" class="paper">
                         <div class="basic-info">
-                            <h1>你的姓名</h1>
-                            <span>一句话介绍自己，告诉HR为什么选择你而不是别人</span>
+                            <h1>
+                                <editable-element :init-data="{ name:'name', content: data.name }" @save="saveData"></editable-element>
+                            </h1>
+                            <span>
+                                <editable-element :init-data="{ name:'intro', content: data.intro }"  @save="saveData"></editable-element>
+                            </span>
                             <p>
                                 <span>出生日期</span> |
                                 <span>所在城市</span> |
