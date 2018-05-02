@@ -59,26 +59,44 @@
                     <div id="paper" class="paper">
                         <div class="basic-info">
                             <h1>
-                                <editable-element :init-data="{ name:'name', content: data.name }" @save="saveData"></editable-element>
+                                <editable-element :init-data="{ key:'name', value: data.name }" @save="saveData"></editable-element>
                             </h1>
                             <span>
-                                <editable-element :init-data="{ name:'intro', content: data.intro }"  @save="saveData"></editable-element>
+                                <editable-element :init-data="{ key:'intro', value: data.intro }"  @save="saveData"></editable-element>
                             </span>
                             <p>
-                                <span>出生日期</span> |
-                                <span>所在城市</span> |
-                                <span>工作年限</span> |
-                                <span>电话号码</span> |
-                                <span>联系邮箱</span>
+                                <span>
+                                    <editable-element :init-data="{ key:'birthday', value: data.birthday }"  @save="saveData"></editable-element>
+                                </span> |
+                                <span>
+                                    <editable-element :init-data="{ key:'city', value: data.city }"  @save="saveData"></editable-element>
+                                </span> |
+                                <span>
+                                    <editable-element :init-data="{ key:'workingYears', value: data.workingYears }"  @save="saveData"></editable-element>
+                                </span> |
+                                <span>
+                                    <editable-element :init-data="{ key:'phoneNumber', value: data.phoneNumber }"  @save="saveData"></editable-element>
+                                </span> |
+                                <span>
+                                    <editable-element :init-data="{ key:'email', value: data.email }"  @save="saveData"></editable-element>
+                                </span>
                             </p>
                         </div>
                         <div class="job-intension">
                             <h2>求职意向</h2>
                             <p>
-                                <span>意向岗位</span>
-                                <span>职业类型</span>
-                                <span>意向城市</span>
-                                <span>入职时间</span>
+                                <span>
+                                    <editable-element :init-data="{ key:'intentionalPost', value: data.intentionalPost }"  @save="saveData"></editable-element>
+                                </span>
+                                <span>
+                                    <editable-element :init-data="{ key:'jobType', value: data.jobType }"  @save="saveData"></editable-element>
+                                </span>
+                                <span>
+                                    <editable-element :init-data="{ key:'intentionalCity', value: data.intentionalCity }"  @save="saveData"></editable-element>
+                                </span>
+                                <span>
+                                    <editable-element :init-data="{ key:'entryTime', value: data.entryTime }"  @save="saveData"></editable-element>
+                                </span>
                             </p>
                         </div>
                         <div class="educational-background">
@@ -101,7 +119,9 @@
                         </div>
                         <div class="self-assessment">
                             <h2>自我评价</h2>
-                            <p>在这里填写自我评价....</p>
+                            <p>
+                                <editable-element :init-data="{ key:'selfAssessment', value: data.selfAssessment }"  @save="saveData"></editable-element>
+                            </p>
                         </div>
                     </div>
                 </div>
